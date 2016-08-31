@@ -1,5 +1,7 @@
 FROM geodata/gdal:2.1.1
 
+USER root
+
 RUN apt-get update
 
 RUN apt-get install -y --no-install-recommends \
