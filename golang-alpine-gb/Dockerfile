@@ -1,0 +1,3 @@
+FROM golang:1.6.3-alpine
+
+RUN go get github.com/constabulary/gb/...
