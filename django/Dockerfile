@@ -24,12 +24,12 @@ RUN mkdir -p /var/run/webapp/ && chown -R webapp /var/run/webapp/ && chmod -R u+
 # Nginx
 ####################################################
 RUN rm /etc/nginx/sites-enabled/default && rm /etc/nginx/sites-available/default
-ADD ./ci_cd/webapp.nginxconf /etc/nginx/sites-enabled/
+ADD ./config/webapp.nginxconf /etc/nginx/sites-enabled/
 
 # Supervisor
 ####################################################
 RUN mkdir -p /var/log/supervisor
-ADD ./ci_cd/supervisor_conf.d/nginx.conf /etc/supervisor/conf.d/
-ADD ./ci_cd/supervisor_conf.d/webapp.conf /etc/supervisor/conf.d/
+ADD ./config/supervisor_conf.d/nginx.conf /etc/supervisor/conf.d/
+ADD ./config/supervisor_conf.d/webapp.conf /etc/supervisor/conf.d/
 
 EXPOSE 8000
