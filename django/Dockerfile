@@ -20,7 +20,7 @@ RUN groupadd webapps
 RUN useradd webapp -G webapps
 RUN mkdir -p /var/log/webapp/ && chown -R webapp /var/log/webapp/ && chmod -R u+rX /var/log/webapp/
 RUN mkdir -p /var/run/webapp/ && chown -R webapp /var/run/webapp/ && chmod -R u+rX /var/run/webapp/
-ADD ./config/gunicorn.conf /var/projects/webapp/
+ADD ./config/gunicorn.conf /
 
 # Nginx
 ####################################################
