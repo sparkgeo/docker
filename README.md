@@ -8,5 +8,6 @@ This repo has various Dockerfiles for building different base images for various
 
 * [sparkgeo/alpine-dumbinit-base](https://hub.docker.com/r/sparkgeo/alpine-dumbinit-base/)
 * [sparkgeo/base:latest](https://hub.docker.com/r/sparkgeo/base/)
+* [sparkgeo/base:django](https://hub.docker.com/r/sparkgeo/base/)
 * [sparkgeo/base:maptiks-webapp](https://hub.docker.com/r/sparkgeo/base/)
 * [sparkgeo/geospatial-base](https://hub.docker.com/r/sparkgeo/geospatial-base/)
