@@ -8,7 +8,7 @@ RUN apk update && apk upgrade
 
 # install ca-certificates so that HTTPS works consistently
 # the other runtime dependencies for Python are installed later
-RUN apk add --no-cache ca-certificates
+RUN apk add --no-cache ca-certificates vim bash
 
 # Install Python
 RUN apk add --update \
@@ -17,5 +17,7 @@ RUN apk add --update \
     py-pip \
     build-base \
   && rm -rf /var/cache/apk/*
+
+RUN pip install gunicorn
 
 # Ports 80, 443 are already exposed.
