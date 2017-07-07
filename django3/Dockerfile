@@ -2,11 +2,22 @@
 # Environment
 ###############################################################################
 
-FROM sparkgeo/base:python3
+FROM bitnami/minideb:jessie
 
 ##############################################################################
 # Application
 ##############################################################################
+RUN apt-get update
+RUN apt-get install -y --no-install-recommends \
+    build-essential \
+    vim \
+    python3-pip \
+    python3 \
+    python3-dev \
+    postgresql \
+    nginx \
+    supervisor \
+    gunicorn
 
 # PIP install Django libs
 ####################################################
