@@ -34,7 +34,8 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     python-pip \
     ruby \
     supervisor \
-    vim
+    vim \
+    gunicorn
 
 RUN pip install --upgrade pip
 
