@@ -31,11 +31,4 @@ ADD ./deploy/supervisor/webapp.conf /etc/supervisor/conf.d/
 
 WORKDIR /app/
 
-ADD ./requirements.txt .
-ADD ./src .
-RUN pip3 install -r requirements.txt
-RUN pip3 uninstall -y ujson
-
 EXPOSE 80 443 9000
-
-CMD ["supervisord", "-n", "-c", "/etc/supervisor/supervisord.conf"]
