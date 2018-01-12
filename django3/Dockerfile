@@ -14,7 +14,7 @@ RUN apt-get install -y --no-install-recommends \
     python3-pip \
     python3 \
     python3-dev \
-    postgresql \
+    postgresql-client \
     nginx \
     supervisor \
     gunicorn
