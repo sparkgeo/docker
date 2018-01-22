@@ -23,8 +23,7 @@ RUN apt-get install -y --no-install-recommends \
     python3-gdal \
     postgresql-client-9.6 \
     nginx \
-    supervisor \
-    gunicorn
+    supervisor
 
 # PIP install Django libs
 ####################################################
