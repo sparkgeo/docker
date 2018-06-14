@@ -29,6 +29,9 @@ RUN mkdir -p /var/log/supervisor
 ADD ./deploy/supervisor/nginx.conf /etc/supervisor/conf.d/
 ADD ./deploy/supervisor/webapp.conf /etc/supervisor/conf.d/
 
+ADD ./requirements.txt .
+RUN pip3 install -r requirements.txt
+
 WORKDIR /app/
 
 EXPOSE 80 443 9000
