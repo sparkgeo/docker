@@ -6,3 +6,4 @@ MAINTAINER Sparkgeo
 RUN sudo apt-get update
 RUN sudo apt-get install python-pip python-dev jq libgeos-dev
 RUN sudo pip install awscli boto3
+RUN sudo pip install setuptools --upgrade
