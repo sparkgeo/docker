@@ -1,4 +1,4 @@
-FROM circleci/node:carbon-jessie-browsers
+FROM circleci/node:8-browsers
 
 MAINTAINER Sparkgeo
 
