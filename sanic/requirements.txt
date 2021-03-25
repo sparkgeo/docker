@@ -30,7 +30,7 @@ pytest-sanic==0.1.6
 python-dateutil==2.6.1
 python-jose==1.4.0
 pytz==2017.3
-PyYAML==4.2b1
+PyYAML==5.4
 regex==2017.11.9
 requests==2.20.0
 ruamel.yaml==0.15.34
