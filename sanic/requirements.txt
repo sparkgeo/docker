@@ -21,7 +21,7 @@ idna==2.6
 jmespath==0.9.3
 multidict==3.3.2
 pathtools==0.1.2
-py==1.5.2
+py==1.10.0
 pycrypto==2.6.1
 pynamodb==3.2.1
 pytest==3.2.5
