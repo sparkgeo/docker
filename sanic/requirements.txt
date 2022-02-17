@@ -35,7 +35,7 @@ regex==2017.11.9
 requests==2.20.0
 ruamel.yaml==0.15.34
 s3transfer==0.1.11
-sanic==0.6.0
+sanic==20.12.6
 Sanic-Cors==0.6.0.0
 six==1.11.0
 tzlocal==1.4
