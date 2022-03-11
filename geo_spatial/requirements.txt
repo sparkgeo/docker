@@ -13,7 +13,7 @@ profilehooks>=1.8.1
 fiona>=1.6.4
 shapely>=1.5.15
 descartes>=1.0.2
-Pillow==2.9.0
+Pillow==9.0.1
 psycopg2>=2.6.1
 jinja2>=2.8
 numpy
